@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KAFELA Islamic Foundation — ঈমান, মানবতা ও সহমর্মিতার মাধ্যমে মানুষের কল্যাণে।">
+  <title>KAFELA Islamic Foundation | কাফেলা ইসলামিক ফাউন্ডেশন</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#126b45;--deep:#08452e;--gold:#c6a34a;--cream:#f7faf6;--ink:#203329;--muted:#66756c;--line:#e4ece6}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Inter,"Hind Siliguri",sans-serif;line-height:1.7;background:#fff}
+    body.bn{font-family:"Hind Siliguri",Inter,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;color:var(--deep);font-weight:800;line-height:1.25}.mark{width:45px;height:45px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--green);font-size:25px}
+    .brand small{display:block;font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.5px}
+    nav{display:flex;align-items:center;gap:20px;font-size:13px;font-weight:700}nav a:hover{color:var(--green)}
+    .lang,.btn{border:0;border-radius:999px;padding:10px 16px;font-weight:700;cursor:pointer}.lang{background:#edf5ef;color:var(--deep)}
+    .menu{display:none;background:none;border:0;font-size:25px;color:var(--deep)}
+    .hero{background:radial-gradient(circle at 15% 20%,#e8f2e9,transparent 35%),linear-gradient(120deg,#f8fbf7,#fff 65%);padding:86px 0 78px;text-align:center;border-bottom:4px solid var(--gold);position:relative;overflow:hidden}
+    .hero:after{content:"۞";position:absolute;right:5%;bottom:-85px;font-size:260px;color:#126b4509;pointer-events:none}
+    .eyebrow{color:var(--gold);font-size:12px;letter-spacing:2px;font-weight:800;text-transform:uppercase}
+    h1{font-size:clamp(36px,6vw,62px);line-height:1.14;color:var(--deep);margin:15px 0}.bn-title{display:block;font-size:clamp(25px,4vw,37px);margin-top:12px}
+    .hero p{max-width:740px;margin:18px auto;color:var(--muted);font-size:18px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn-primary{background:var(--green);color:white}.btn-primary:hover{background:var(--deep)}.btn-outline{background:white;color:var(--green);border:1px solid #b9d0c0}
+    section{padding:76px 0}.section-head{text-align:center;max-width:740px;margin:0 auto 36px}.section-head h2{font-size:clamp(27px,4vw,38px);color:var(--deep);margin:8px 0}.section-head p{color:var(--muted);margin:0}
+    .notice{background:#fff9e9;border:1px solid #ead9a9;border-left:5px solid var(--gold);border-radius:14px;padding:22px 24px;margin:30px auto;max-width:950px}
+    .notice h3{margin:0 0 5px;color:#795b14}.notice p{margin:5px 0;color:#655a3d}.notice.green{background:#f0f7f1;border-color:#c9dfce;border-left-color:var(--green)}.notice.green h3{color:var(--deep)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 28px #12351d08}.card .ico{font-size:27px}.card h3{margin:10px 0 6px;color:var(--deep);font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:22px}.soft{background:var(--cream)}.pill{display:inline-block;border-radius:999px;background:#eaf4ed;color:var(--green);padding:5px 12px;font-size:12px;font-weight:800}
+    .form-wrap{max-width:850px;margin:auto;background:white;border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 12px 36px #12351d0b}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-size:14px;font-weight:700;color:var(--deep)}
+    input,select,textarea{width:100%;border:1px solid #d7e2d9;border-radius:9px;padding:12px;font:inherit;font-size:14px;background:#fff;color:var(--ink)}input:focus,select:focus,textarea:focus{outline:2px solid #b7d6c0;border-color:var(--green)}textarea{min-height:100px;resize:vertical}
+    .consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted);margin:18px 0}.consent input{width:auto;margin-top:5px}
+    .form-note{background:#f6f8f6;border-radius:10px;padding:13px;font-size:13px;color:var(--muted);margin:14px 0}
+    .status{font-size:14px;color:var(--green);font-weight:700;margin-top:12px;display:none}
+    .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.contact-item{background:#f7faf7;border-radius:12px;padding:18px}.contact-item b{display:block;color:var(--deep)}
+    footer{background:var(--deep);color:#e8f1ea;padding:36px 0;text-align:center}footer p{margin:5px;color:#c5d7ca;font-size:13px}.footer-name{font-size:22px;font-weight:800;color:white}
+    .smallprint{font-size:12px;color:#d7e5da;margin-top:18px}
+    @media(max-width:850px){nav{display:none;position:absolute;left:0;right:0;top:76px;background:white;padding:18px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}nav.open{display:flex}.menu{display:block}.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:600px){.nav{height:68px}.hero{padding:65px 0}.grid,.two,.contact-grid,.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}section{padding:56px 0}.form-wrap{padding:20px}.brand{font-size:14px}.brand small{font-size:10px}}
+  </style>
+</head>
+<body class="bn">
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span class="mark">۞</span><span>KAFELA Islamic Foundation<small>কাফেলা ইসলামিক ফাউন্ডেশন</small></span></a>
+    <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav id="nav">
+      <a href="#home" data-en="Home" data-bn="হোম">হোম</a>
+      <a href="#about" data-en="About" data-bn="আমাদের সম্পর্কে">আমাদের সম্পর্কে</a>
+      <a href="#activities" data-en="Activities" data-bn="কার্যক্রম">কার্যক্রম</a>
+      <a href="#governance" data-en="Governance" data-bn="পরিচালনা নীতি">পরিচালনা নীতি</a>
+      <a href="#volunteer" data-en="Volunteer" data-bn="স্বেচ্ছাসেবক">স্বেচ্ছাসেবক</a>
+      <a href="#contact" data-en="Contact" data-bn="যোগাযোগ">যোগাযোগ</a>
+    </nav>
+    <button class="lang" id="langBtn">English</button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="eyebrow" data-en="Faith • Humanity • Unity" data-bn="ঈমান • মানবতা • ঐক্য">ঈমান • মানবতা • ঐক্য</div>
+    <h1>KAFELA Islamic Foundation<span class="bn-title">কাফেলা ইসলামিক ফাউন্ডেশন</span></h1>
+    <p data-en="Serving humanity with faith, compassion and unity." data-bn="ঈমান, মানবতা, সহমর্মিতা ও ঐক্যের মাধ্যমে মানুষের কল্যাণে।">ঈমান, মানবতা, সহমর্মিতা ও ঐক্যের মাধ্যমে মানুষের কল্যাণে।</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#volunteer" data-en="Become a Volunteer" data-bn="স্বেচ্ছাসেবক হোন">স্বেচ্ছাসেবক হোন</a>
+      <a class="btn btn-outline" href="#about" data-en="Learn More" data-bn="আরও জানুন">আরও জানুন</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="notice">
+    <h3 data-en="Registration in Progress" data-bn="নিবন্ধন প্রক্রিয়াধীন">নিবন্ধন প্রক্রিয়াধীন</h3>
+    <p data-en="KAFELA Islamic Foundation is currently undergoing its registration process. Final registration approval has not yet been received." data-bn="কাফেলা ইসলামিক ফাউন্ডেশনের নিবন্ধন প্রক্রিয়া চলমান রয়েছে। এখনো চূড়ান্ত নিবন্ধন অনুমোদন পাওয়া যায়নি।">কাফেলা ইসলামিক ফাউন্ডেশনের নিবন্ধন প্রক্রিয়া চলমান রয়েছে। এখনো চূড়ান্ত নিবন্ধন অনুমোদন পাওয়া যায়নি।</p>
+  </div>
+  <div class="notice green">
+    <h3 data-en="No Donation Collection at This Stage" data-bn="বর্তমানে কোনো অনুদান সংগ্রহ করা হচ্ছে না">বর্তমানে কোনো অনুদান সংগ্রহ করা হচ্ছে না</h3>
+    <p data-en="No donations or financial contributions are being collected. No payment facility is enabled until the required registration and approvals are obtained." data-bn="প্রয়োজনীয় নিবন্ধন ও অনুমোদন সম্পন্ন না হওয়া পর্যন্ত কোনো ধরনের অনুদান বা আর্থিক সহযোগিতা সংগ্রহ করা হচ্ছে না।">প্রয়োজনীয় নিবন্ধন ও অনুমোদন সম্পন্ন না হওয়া পর্যন্ত কোনো ধরনের অনুদান বা আর্থিক সহযোগিতা সংগ্রহ করা হচ্ছে না।</p>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head"><span class="pill" data-en="Who We Are" data-bn="আমাদের পরিচয়">আমাদের পরিচয়</span><h2 data-en="About the Foundation" data-bn="ফাউন্ডেশন সম্পর্কে">ফাউন্ডেশন সম্পর্কে</h2><p data-en="An initiative inspired by Islamic values, humanity, compassion, unity and social responsibility." data-bn="ইসলামিক মূল্যবোধ, মানবতা, সহমর্মিতা, ঐক্য ও সামাজিক দায়বদ্ধতায় অনুপ্রাণিত একটি উদ্যোগ।">ইসলামিক মূল্যবোধ, মানবতা, সহমর্মিতা, ঐক্য ও সামাজিক দায়বদ্ধতায় অনুপ্রাণিত একটি উদ্যোগ।</p></div>
+    <div class="two">
+      <article class="card"><div class="ico">🌱</div><h3 data-en="Our Mission" data-bn="আমাদের লক্ষ্য">আমাদের লক্ষ্য</h3><p data-en="To work towards humanitarian welfare, education, community development and social awareness." data-bn="মানবকল্যাণ, শিক্ষা, কমিউনিটি উন্নয়ন ও সামাজিক সচেতনতা বৃদ্ধিতে কাজ করা।">মানবকল্যাণ, শিক্ষা, কমিউনিটি উন্নয়ন ও সামাজিক সচেতনতা বৃদ্ধিতে কাজ করা।</p></article>
+      <article class="card"><div class="ico">🌍</div><h3 data-en="Our Vision" data-bn="আমাদের স্বপ্ন">আমাদের স্বপ্ন</h3><p data-en="A compassionate, educated, united and responsible society." data-bn="একটি সহমর্মী, শিক্ষিত, ঐক্যবদ্ধ ও দায়িত্বশীল সমাজ গড়ে তোলা।">একটি সহমর্মী, শিক্ষিত, ঐক্যবদ্ধ ও দায়িত্বশীল সমাজ গড়ে তোলা।</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="soft" id="activities">
+  <div class="wrap">
+    <div class="section-head"><span class="pill" data-en="Planned Initiatives" data-bn="পরিকল্পিত উদ্যোগ">পরিকল্পিত উদ্যোগ</span><h2 data-en="Our Proposed Activities" data-bn="আমাদের প্রস্তাবিত কার্যক্রম">আমাদের প্রস্তাবিত কার্যক্রম</h2><p data-en="These are proposed areas of work, not claims of completed projects." data-bn="এগুলো ভবিষ্যৎ পরিকল্পিত কাজের ক্ষেত্র; সম্পন্ন প্রকল্পের দাবি নয়।">এগুলো ভবিষ্যৎ পরিকল্পিত কাজের ক্ষেত্র; সম্পন্ন প্রকল্পের দাবি নয়।</p></div>
+    <div class="grid">
+      <article class="card"><div class="ico">🤝</div><h3 data-en="Humanitarian Assistance" data-bn="মানবিক সহায়তা">মানবিক সহায়তা</h3><p data-en="Support for people facing hardship and emergencies." data-bn="দুর্দশাগ্রস্ত ও জরুরি পরিস্থিতিতে থাকা মানুষের পাশে দাঁড়ানো।">দুর্দশাগ্রস্ত ও জরুরি পরিস্থিতিতে থাকা মানুষের পাশে দাঁড়ানো।</p></article>
+      <article class="card"><div class="ico">📚</div><h3 data-en="Education Support" data-bn="শিক্ষা সহায়তা">শিক্ষা সহায়তা</h3><p data-en="Encouraging learning and educational opportunities." data-bn="শিক্ষা ও শেখার সুযোগকে উৎসাহিত করা।">শিক্ষা ও শেখার সুযোগকে উৎসাহিত করা।</p></article>
+      <article class="card"><div class="ico">🏘️</div><h3 data-en="Community Development" data-bn="সামাজিক উন্নয়ন">সামাজিক উন্নয়ন</h3><p data-en="Promoting positive local community initiatives." data-bn="স্থানীয় পর্যায়ে ইতিবাচক সামাজিক উদ্যোগকে উৎসাহিত করা।">স্থানীয় পর্যায়ে ইতিবাচক সামাজিক উদ্যোগকে উৎসাহিত করা।</p></article>
+      <article class="card"><div class="ico">💡</div><h3 data-en="Social Awareness" data-bn="সামাজিক সচেতনতা">সামাজিক সচেতনতা</h3><p data-en="Building awareness about social responsibility and wellbeing." data-bn="সামাজিক দায়বদ্ধতা ও কল্যাণ বিষয়ে সচেতনতা তৈরি।">সামাজিক দায়বদ্ধতা ও কল্যাণ বিষয়ে সচেতনতা তৈরি।</p></article>
+      <article class="card"><div class="ico">🌟</div><h3 data-en="Youth Development" data-bn="যুব উন্নয়ন">যুব উন্নয়ন</h3><p data-en="Encouraging skills, leadership and constructive participation." data-bn="দক্ষতা, নেতৃত্ব ও গঠনমূলক অংশগ্রহণে উৎসাহ দেওয়া।">দক্ষতা, নেতৃত্ব ও গঠনমূলক অংশগ্রহণে উৎসাহ দেওয়া।</p></article>
+      <article class="card"><div class="ico">🙋</div><h3 data-en="Volunteer Activities" data-bn="স্বেচ্ছাসেবামূলক কাজ">স্বেচ্ছাসেবামূলক কাজ</h3><p data-en="Creating opportunities for people to contribute their time and skills." data-bn="মানুষকে সময় ও দক্ষতা দিয়ে অবদান রাখার সুযোগ তৈরি।">মানুষকে সময় ও দক্ষতা দিয়ে অবদান রাখার সুযোগ তৈরি।</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="governance">
+  <div class="wrap">
+    <div class="section-head"><span class="pill" data-en="Our Principles" data-bn="আমাদের নীতিমালা">আমাদের নীতিমালা</span><h2 data-en="Democratic & Accountable Governance" data-bn="গণতান্ত্রিক ও জবাবদিহিমূলক পরিচালনা">গণতান্ত্রিক ও জবাবদিহিমূলক পরিচালনা</h2><p data-en="The foundation intends to follow these principles, subject to its formal registration and approval." data-bn="আনুষ্ঠানিক নিবন্ধন ও অনুমোদন সাপেক্ষে ফাউন্ডেশন এসব নীতি অনুসরণের অভিপ্রায় রাখে।">আনুষ্ঠানিক নিবন্ধন ও অনুমোদন সাপেক্ষে ফাউন্ডেশন এসব নীতি অনুসরণের অভিপ্রায় রাখে।</p></div>
+    <div class="grid">
+      <article class="card"><h3 data-en="Democratic Decisions" data-bn="গণতান্ত্রিক সিদ্ধান্ত">গণতান্ত্রিক সিদ্ধান্ত</h3><p data-en="Encouraging consultation and fair participation." data-bn="পরামর্শ ও ন্যায্য অংশগ্রহণকে উৎসাহিত করা।">পরামর্শ ও ন্যায্য অংশগ্রহণকে উৎসাহিত করা।</p></article>
+      <article class="card"><h3 data-en="Transparency" data-bn="স্বচ্ছতা">স্বচ্ছতা</h3><p data-en="Openness in policies and organizational processes." data-bn="নীতি ও সাংগঠনিক প্রক্রিয়ায় স্বচ্ছতা বজায় রাখা।">নীতি ও সাংগঠনিক প্রক্রিয়ায় স্বচ্ছতা বজায় রাখা।</p></article>
+      <article class="card"><h3 data-en="Accountability" data-bn="জবাবদিহিতা">জবাবদিহিতা</h3><p data-en="Promoting responsibility and answerability." data-bn="দায়িত্বশীলতা ও জবাবদিহিতা নিশ্চিত করার অঙ্গীকার।">দায়িত্বশীলতা ও জবাবদিহিতা নিশ্চিত করার অঙ্গীকার।</p></article>
+    </div>
+    <div class="notice"><h3 data-en="Constitution Not Yet Published" data-bn="গঠনতন্ত্র এখনো প্রকাশিত হয়নি">গঠনতন্ত্র এখনো প্রকাশিত হয়নি</h3><p data-en="The foundation's constitution has not yet been officially published. Its organizational structure, policies and governance arrangements remain subject to formal approval. No committee members or office bearers are represented here." data-bn="ফাউন্ডেশনের গঠনতন্ত্র এখনো আনুষ্ঠানিকভাবে প্রকাশিত হয়নি। সাংগঠনিক কাঠামো, নীতিমালা ও পরিচালনা ব্যবস্থা আনুষ্ঠানিক অনুমোদন সাপেক্ষ। এখানে কোনো কমিটি সদস্য বা পদাধিকারীর নাম প্রকাশ করা হয়নি।">ফাউন্ডেশনের গঠনতন্ত্র এখনো আনুষ্ঠানিকভাবে প্রকাশিত হয়নি। সাংগঠনিক কাঠামো, নীতিমালা ও পরিচালনা ব্যবস্থা আনুষ্ঠানিক অনুমোদন সাপেক্ষ। এখানে কোনো কমিটি সদস্য বা পদাধিকারীর নাম প্রকাশ করা হয়নি।</p></div>
+  </div>
+</section>
+
+<section class="soft" id="volunteer">
+  <div class="wrap">
+    <div class="section-head"><span class="pill" data-en="Get Involved" data-bn="যুক্ত হোন">যুক্ত হোন</span><h2 data-en="Volunteer Registration" data-bn="স্বেচ্ছাসেবক নিবন্ধন">স্বেচ্ছাসেবক নিবন্ধন</h2><p data-en="Share your details and interest. Submission does not guarantee membership." data-bn="আপনার তথ্য ও আগ্রহ জানান। ফরম জমা দিলেই সদস্যপদ নিশ্চিত হবে না।">আপনার তথ্য ও আগ্রহ জানান। ফরম জমা দিলেই সদস্যপদ নিশ্চিত হবে না।</p></div>
+    <div class="form-wrap">
+      <div class="form-note" id="formSetupNote">Google Form এখনো সংযুক্ত করা হয়নি। ফরম চালু করতে index.html ফাইলে GOOGLE_FORM_ACTION এবং প্রতিটি entry ID বসাতে হবে। সংযোগ না হওয়া পর্যন্ত এই ফরম কোনো তথ্য জমা নেবে না।</div>
+      <form id="volunteerForm">
+        <div class="form-grid">
+          <div class="field"><label for="name">পূর্ণ নাম / Full Name *</label><input id="name" name="entry.NAME" required></div>
+          <div class="field"><label for="phone">মোবাইল নম্বর / Mobile Number *</label><input id="phone" name="entry.PHONE" type="tel" required></div>
+          <div class="field"><label for="email">ইমেইল / Email</label><input id="email" name="entry.EMAIL" type="email"></div>
+          <div class="field"><label for="dob">জন্মতারিখ / Date of Birth</label><input id="dob" name="entry.DOB" type="date"></div>
+          <div class="field"><label for="district">জেলা / District *</label><input id="district" name="entry.DISTRICT" required></div>
+          <div class="field"><label for="upazila">উপজেলা / Upazila</label><input id="upazila" name="entry.UPAZILA"></div>
+          <div class="field"><label for="occupation">পেশা / Occupation</label><input id="occupation" name="entry.OCCUPATION"></div>
+          <div class="field"><label for="education">শিক্ষাগত যোগ্যতা / Education</label><input id="education" name="entry.EDUCATION"></div>
+          <div class="field full"><label for="interest">কোন কাজে আগ্রহী / Volunteer Interest *</label><select id="interest" name="entry.INTEREST" required><option value="">নির্বাচন করুন / Select</option><option>মানবিক সহায়তা / Humanitarian Assistance</option><option>শিক্ষা / Education</option><option>সামাজিক উন্নয়ন / Community Development</option><option>সচেতনতা / Awareness</option><option>অন্যান্য / Other</option></select></div>
+          <div class="field full"><label for="skills">দক্ষতা ও অভিজ্ঞতা / Skills and Experience</label><textarea id="skills" name="entry.SKILLS"></textarea></div>
+          <div class="field full"><label for="why">কেন স্বেচ্ছাসেবক হতে চান? / Why do you want to volunteer?</label><textarea id="why" name="entry.WHY"></textarea></div>
+        </div>
+        <label class="consent"><input type="checkbox" id="consent" required><span>আমি সঠিক তথ্য প্রদান করতে সম্মত এবং বুঝতে পারছি যে এই ফরম জমা দিলেই সদস্যপদ নিশ্চিত হবে না। / I agree to provide accurate information and understand that submitting this form does not guarantee membership.</span></label>
+        <button class="btn btn-primary" type="submit" id="submitBtn">ফরম জমা দিন / Submit</button>
+        <div class="status" id="formStatus" role="status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head"><span class="pill" data-en="Reach Us" data-bn="যোগাযোগ">যোগাযোগ</span><h2 data-en="Contact Information" data-bn="যোগাযোগের তথ্য">যোগাযোগের তথ্য</h2><p data-en="Official contact details will be published here when confirmed." data-bn="নিশ্চিত হওয়ার পর এখানে আনুষ্ঠানিক যোগাযোগের তথ্য প্রকাশ করা হবে।">নিশ্চিত হওয়ার পর এখানে আনুষ্ঠানিক যোগাযোগের তথ্য প্রকাশ করা হবে।</p></div>
+    <div class="contact-grid">
+      <div class="contact-item">✉️ <b>Email</b><span>To be announced</span></div>
+      <div class="contact-item">📞 <b>Phone</b><span>To be announced</span></div>
+      <div class="contact-item">📍 <b>Address</b><span>To be announced</span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-name">KAFELA Islamic Foundation</div>
+    <div>কাফেলা ইসলামিক ফাউন্ডেশন</div>
+    <p>Serving Humanity with Faith, Compassion and Unity.</p>
+    <p class="smallprint">Registration in progress • Constitution not yet published • No donations are being collected.</p>
+    <p class="smallprint">© <span id="year"></span> KAFELA Islamic Foundation. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // GOOGLE FORMS SETUP:
+  // Replace the placeholder action URL with your Google Form formResponse URL.
+  // Replace each placeholder entry ID below with the matching Google Forms entry ID.
+  const GOOGLE_FORM_ACTION = ""; // Example format: https://docs.google.com/forms/d/e/FORM_ID/formResponse
+  const FORM_CONNECTED = GOOGLE_FORM_ACTION.trim().length > 0;
+  const menuBtn = document.getElementById('menuBtn');
+  const nav = document.getElementById('nav');
+  menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  let language = 'bn';
+  document.getElementById('langBtn').addEventListener('click',()=>{
+    language = language === 'bn' ? 'en' : 'bn';
+    document.body.classList.toggle('bn', language === 'bn');
+    document.querySelectorAll('[data-en][data-bn]').forEach(el=>el.textContent = el.dataset[language]);
+    document.getElementById('langBtn').textContent = language === 'bn' ? 'English' : 'বাংলা';
+  });
+
+  const form = document.getElementById('volunteerForm');
+  const note = document.getElementById('formSetupNote');
+  const status = document.getElementById('formStatus');
+  const submit = document.getElementById('submitBtn');
+  if(!FORM_CONNECTED){
+    submit.disabled = true;
+    submit.style.opacity = '.55';
+    submit.style.cursor = 'not-allowed';
+    note.style.display = 'block';
+  } else {
+    note.style.display = 'none';
+  }
+  form.addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    if(!FORM_CONNECTED){
+      status.style.display='block';
+      status.textContent='Google Form সংযুক্ত না হওয়া পর্যন্ত জমা দেওয়া যাবে না।';
+      return;
+    }
+    if(!form.reportValidity()) return;
+    const data = new FormData(form);
+    try{
+      await fetch(GOOGLE_FORM_ACTION,{method:'POST',mode:'no-cors',body:data});
+      status.style.display='block';
+      status.textContent=language==='bn'?'ধন্যবাদ! আপনার তথ্য পাঠানোর অনুরোধ করা হয়েছে।':'Thank you! Your submission request has been sent.';
+      form.reset();
+    }catch(err){
+      status.style.display='block';
+      status.textContent=language==='bn'?'দুঃখিত, জমা দেওয়া যায়নি। পরে আবার চেষ্টা করুন।':'Sorry, submission failed. Please try again later.';
+    }
+  });
+</script>
+</body>
+</html>
